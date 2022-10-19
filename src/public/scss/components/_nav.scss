@@ -1,0 +1,25 @@
+nav {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100px;
+
+	.nav__container {
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 18px;
+
+		// Icon
+		img {
+			width: 41px;
+		}
+
+		// Menu icon
+		i {
+			font-size: 32px;
+			color: #fff;
+		}
+	}
+}

@@ -1,0 +1,37 @@
+{{#each pricing}}
+	<div class='card' data-aos='fade-up'>
+		<h4>{{title}}</h4>
+		<p>{{description}}</p>
+		<div class='price'>
+			<div class='promo'>
+				{{#if before}}
+					<div class='before'>{{before}}</div>
+				{{/if}}
+				<div class='less'>{{less}}</div>
+			</div>
+			<div>
+				<h2>{{price}}</h2>
+				<p class='usd'>
+					{{#if note}}
+						{{note}}
+					{{else}}
+						USD
+					{{/if}}
+				</p>
+			</div>
+		</div>
+
+		<h5>Este paquete incluye:</h5>
+
+		<ul>
+			{{#each content}}
+				<li>{{this}}</li>
+			{{/each}}
+		</ul>
+
+		<footer>
+			<div class='line'></div>
+			Más información
+		</footer>
+	</div>
+{{/each}}

@@ -1,0 +1,54 @@
+// Home content
+.home {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+
+	// Background image
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	.home__content {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding-bottom: 98px;
+		padding-left: 29px;
+
+		// Main title
+		h1 {
+			color: #fff;
+			font-size: 2.7819rem;
+			font-weight: medium;
+			margin: 15px 0;
+
+			span {
+				color: #54ffd6;
+				font-size: 2.7819rem;
+				font-weight: medium;
+			}
+		}
+
+		p {
+			font-family: 'Poppins', sans-serif;
+			color: #fff;
+
+			span {
+				font-family: 'Poppins', sans-serif;
+				color: #54ffd6;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.home {
+		.home__content {
+			padding-left: 89px;
+		}
+	}
+}

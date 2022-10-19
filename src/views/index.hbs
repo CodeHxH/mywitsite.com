@@ -1,0 +1,124 @@
+{{!-- Main section --}}
+<div class='home'>
+	<img src='/img/bg.jpg' alt='Imagen de fondo' />
+
+	<div class='home__content' data-aos="fade-right" data-aos-delay="300">
+		<p>Bienvenido a <span>witsite c.a</span></p>
+		<h1>Obten tu <span>sitio</span> <br /> en la <span>web</span></h1>
+		<a href='/' class='btn--lineaqua'> <div>Servicios</div> </a>
+	</div>
+</div>
+
+{{!-- Projects --}}
+<section class='noteworty-projects'>
+
+	<h3 class='subtitle'>Nuestro trabajo</h3>
+	<h2 class='title'>Proyectos destacados</h2>
+
+	<article>
+		{{#each projects}}
+			<div data-aos="fade-up">
+				<a href='{{link}}' target="_blank">
+
+					<img src='{{img}}' alt='sitio web de muestra' />
+					<p>{{name}}</p>
+					<h3>{{type}}</h3>
+
+				</a>
+			</div>
+		{{/each}}
+	</article>
+
+	<div class='btn-aling'>
+		<a href='/' class='btn--linegrape'> <div>Otros</div> </a>
+	</div>
+</section>
+
+{{!-- About --}}
+<section class='about'>
+
+<div class="about__container"  data-aos="fade-up">
+	{{!-- Witsite logo --}}
+	<article class="witsite--logo"><img src='/img/about.png' alt='Logo de witsite' /></article>
+
+{{!-- About witsite --}}
+	<article class='about__info'>
+
+		<h3 class='subtitle'>Sobre witsite</h3>
+		<h2 class='title'>Construimos sitios web</h2>
+
+		<p><span>Witsite c.a</span>
+			es una empresa venezolana de desarrollo de software orientada a la
+			creación de sitios web, aplicaciones, tiendas virtuales y todo tipo de
+			software dedicado. Nuestro objetivo es mejorar la interacción entre usted
+			y sus clientes, cada negocio es distinto, por eso nos adaptamos a sus
+			necesidades.
+			<br /><br />
+			Nuestra ética de trabajo se basa en el respeto y la confianza. Nuestros
+			clientes son lo más importante, por eso nos esforzamos en darles un
+			servicio profesional y de confianza.</p>
+
+		<ul>
+			<li><span>Lecheria, Venezuela.</span></li>
+			<li><span>hello@mywitsite.com</span></li>
+			<li><span>0414-8780487 / 0424-9142598</span></li>
+			<li><span>Rif. J-50116609-9</span></li>
+		</ul>
+
+		<div class='about__links'>
+			<a target="_blank" href='https://api.whatsapp.com/send?phone=584249142598' class='btn--aqua'>WhatsApp <i class='bi bi-whatsapp'></i></a>
+			<a target="_blank" href='https://instagram.com/witsite_oficial' class='btn--grape'>Instagram
+				<i class='bi bi-instagram'></i></a>
+		</div>
+
+	</article>
+</div>
+
+</section>
+
+{{!-- Pricing --}}
+<section class='pricing'>
+	<div class="pricing__header">
+		<h3 class='subtitle'>Paquetes y servicios</h3>
+	<h2 class='title'>Los mejores precios de Venezuela</h2>
+	</div>
+	
+	<article>
+		{{> card }}
+	</article>
+</section>
+
+<div class="note__container">
+	<p class='note'>Nota. En caso de necesitar funciones especiales en tu sitio web,
+	se agragara un importe adicional partiendo del precio del paquete, solicita tu
+	presupuesto en budget@mywitsite.com con una descripción breve del proyecto que
+	necesitas.
+</p>
+</div>
+
+
+<div class='menu__footer'>
+<div class="menu__footer--container">
+	
+
+	<ul>
+		<li><a href='/'><span>Principal</span></a></li>
+		<li><a href='/'>Seguridad</a></li>
+		<li><a href='/'>Política de privacidad</a></li>
+		<li><a href='/'>Términos y condiciones</a></li>
+		<li><a href='/'>Preguntas frecuentes</a></li>
+		<li><a href='/'>hello@mywitsite.com</a></li>
+	</ul>
+
+	<div class='mailbox'>
+
+		<p>Suscribete a nuestro boletín informativo para enterarte de nuevas
+			promociones.</p>
+
+		<form>
+			<input type='text' placeholder='hello@mywitsite.com' />
+			<button>Enviar</button>
+		</form>
+	</div>
+</div>
+</div>

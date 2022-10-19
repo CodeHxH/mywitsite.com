@@ -1,0 +1,94 @@
+// Styles for desktop
+@media screen and (min-width: 768px) {
+	.home {
+		.home__content {
+			p {
+				font-size: 20px;
+
+				span {
+					font-size: 20px;
+				}
+			}
+
+			h1 {
+				font-size: 72px;
+
+				span {
+					font-size: 72px;
+				}
+			}
+
+			a {
+				div {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+
+	.title {
+		font-size: 44.51;
+	}
+	.subtitle {
+		font-size: 20;
+	}
+
+	.about__container {
+		box-shadow: 0px 4px 10px 7px rgba(0, 0, 0, 0.25);
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		max-width: 1200px;
+
+		.witsite--logo,
+		.about__info {
+			width: 50%;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.menu__footer--container {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.pricing {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+
+		.pricing__header {
+			width: 100%;
+			max-width: 1250px;
+			padding-left: 0;
+		}
+
+		article {
+			max-width: 1250px;
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.noteworty-projects {
+		h2,
+		h3,
+		.btn-aling {
+			max-width: 1000px;
+		}
+
+		article {
+			max-width: 1000px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+	}
+}
